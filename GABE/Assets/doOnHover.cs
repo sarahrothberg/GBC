@@ -39,7 +39,7 @@ public class doOnHover : MonoBehaviour
 		{
 			float time = Time.time;
 			if (time > startTime && time < endTime){
-				volume = Mathf.Lerp  (fadeIn ? 0.09f : 1f, fadeIn ? 1f : 0.09f, (time-startTime)/(endTime-startTime));
+				volume = Mathf.Lerp  (fadeIn ? 0.01f : 1f, fadeIn ? 1f : 0.01f, (time-startTime)/(endTime-startTime));
 //				Debug.Log(fadeIn ? 1f : 0f);
 				GetComponent<AudioSource>().volume=volume;
 			}

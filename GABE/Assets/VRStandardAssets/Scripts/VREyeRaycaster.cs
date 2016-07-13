@@ -19,7 +19,7 @@ namespace VRStandardAssets.Utils
         [SerializeField] private bool m_ShowDebugRay;                   // Optionally show the debug ray.
         [SerializeField] private float m_DebugRayLength = 5f;           // Debug ray length.
         [SerializeField] private float m_DebugRayDuration = 1f;         // How long the Debug ray will remain visible.
-        [SerializeField] private float m_RayLength = 500f;              // How far into the scene the ray is cast.
+        [SerializeField] private float m_RayLength = 5000f;              // How far into the scene the ray is cast.
 
         
         private VRInteractiveItem m_CurrentInteractible;                //The current interactive item
