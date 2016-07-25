@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Line002Mat
-  m_Shader: {fileID: 4800000, guid: b95caf64e2cc3614892026a94bb2be84, type: 3}
+  m_Name: 'Material #324'
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -39,13 +39,6 @@ Material:
       data:
         first:
           name: _ParallaxMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _ColorRamp
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -108,14 +101,6 @@ Material:
         second: 0.5
       data:
         first:
-          name: _Alpha
-        second: 1
-      data:
-        first:
-          name: _ColorRampOffset
-        second: 0
-      data:
-        first:
           name: _ZWrite
         second: 1
       data:
@@ -150,8 +135,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 0.30882353, g: 0.30882353, b: 0.30882353, a: 1}
-      data:
-        first:
-          name: _Tint
-        second: {r: 0.7647059, g: 0.62413496, b: 0.62413496, a: 1}
+        second: {r: 0.96862745, g: 0.96862745, b: 0.96862745, a: 1}
