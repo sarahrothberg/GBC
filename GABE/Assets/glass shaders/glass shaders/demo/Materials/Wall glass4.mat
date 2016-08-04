@@ -34,7 +34,7 @@ Material:
           name: _NormalMap
         second:
           m_Texture: {fileID: 2800000, guid: e904d288a07c1904e9776364060d2332, type: 3}
-          m_Scale: {x: 3, y: 4}
+          m_Scale: {x: 23.61, y: 13.9}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -90,7 +90,7 @@ Material:
           name: _DiffuseMapSpecA
         second:
           m_Texture: {fileID: 2800000, guid: 7068720dcfa32584292ba4a8f965c201, type: 3}
-          m_Scale: {x: 3, y: 4}
+          m_Scale: {x: 23.61, y: 13.9}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -151,7 +151,7 @@ Material:
       data:
         first:
           name: _Glossiness
-        second: 0.364
+        second: 0
       data:
         first:
           name: _BumpScale
@@ -178,28 +178,28 @@ Material:
         second: 0
       data:
         first:
+          name: _Refraction
+        second: 0.027
+      data:
+        first:
+          name: _Transparency
+        second: 0.234
+      data:
+        first:
+          name: _SpecularIntensity
+        second: 0.133
+      data:
+        first:
+          name: _NormalIntensity
+        second: 0
+      data:
+        first:
           name: _EmissionScaleUI
         second: 0
       data:
         first:
-          name: _Refraction
-        second: 0.363
-      data:
-        first:
-          name: _Transparency
-        second: 0.717
-      data:
-        first:
-          name: _SpecularIntensity
-        second: 0.602
-      data:
-        first:
-          name: _NormalIntensity
-        second: 1
-      data:
-        first:
           name: _ReflectionEdges
-        second: 0.934
+        second: 1
       data:
         first:
           name: _ReflectionIntensity
@@ -207,7 +207,7 @@ Material:
       data:
         first:
           name: _BlurReflection
-        second: 0
+        second: 1
       data:
         first:
           name: _WetIntensity
@@ -227,15 +227,15 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _EmissionColorUI
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
           name: _DiffuseColor
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _SpecularColor
+        second: {r: 0.6764706, g: 0.9464503, b: 1, a: 1}
+      data:
+        first:
+          name: _EmissionColorUI
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:

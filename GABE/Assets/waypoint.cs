@@ -14,6 +14,8 @@ namespace VRStandardAssets.Examples
         bool fadeIn = false;
         float volume;
         public GameObject player;
+        public GameObject waypointPosition;
+
 
         [SerializeField]
         private Material m_NormalMaterial;
@@ -29,7 +31,7 @@ namespace VRStandardAssets.Examples
         private void Awake()
         {
             m_Renderer.material = m_NormalMaterial;
-            waypointPos = this.transform.position;
+            waypointPos = waypointPosition.transform.position;
 
         }
 
@@ -37,8 +39,7 @@ namespace VRStandardAssets.Examples
         {
             m_InteractiveItem.OnOver += HandleOver;
             m_InteractiveItem.OnOut += HandleOut;
-            m_InteractiveItem.OnClick += HandleClick;
-            m_InteractiveItem.OnDoubleClick += HandleDoubleClick;
+
         }
 
 
@@ -46,8 +47,6 @@ namespace VRStandardAssets.Examples
         {
             m_InteractiveItem.OnOver -= HandleOver;
             m_InteractiveItem.OnOut -= HandleOut;
-            m_InteractiveItem.OnClick -= HandleClick;
-            m_InteractiveItem.OnDoubleClick -= HandleDoubleClick;
         }
 
         void Update()
@@ -87,20 +86,6 @@ namespace VRStandardAssets.Examples
             //endTime = Time.time + fadeTime;
 
 
-        }
-
-
-        //Handle the Click event
-        private void HandleClick()
-        {
-            Debug.Log("Show click state");
-        }
-
-
-        //Handle the DoubleClick event
-        private void HandleDoubleClick()
-        {
-            Debug.Log("Show double click");
         }
     }
 }

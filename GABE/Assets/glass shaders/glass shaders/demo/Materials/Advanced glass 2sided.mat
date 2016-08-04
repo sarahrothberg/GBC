@@ -34,7 +34,7 @@ Material:
           name: _NormalMap
         second:
           m_Texture: {fileID: 2800000, guid: e904d288a07c1904e9776364060d2332, type: 3}
-          m_Scale: {x: 0.65, y: 0.67}
+          m_Scale: {x: 2.23, y: 5.64}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -150,10 +150,6 @@ Material:
         second: 0
       data:
         first:
-          name: _EmissionScaleUI
-        second: 0
-      data:
-        first:
           name: _Refraction
         second: 0.607
       data:
@@ -163,11 +159,15 @@ Material:
       data:
         first:
           name: _SpecularIntensity
-        second: 0.372
+        second: 0.837
       data:
         first:
           name: _NormalIntensity
-        second: 0.947
+        second: 1
+      data:
+        first:
+          name: _EmissionScaleUI
+        second: 0
       data:
         first:
           name: _ReflectionEdges
@@ -191,17 +191,17 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
+          name: _DiffuseColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
           name: _EmissionColorUI
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
           name: _GlassColor
         second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _DiffuseColor
-        second: {r: 0.8014706, g: 0.24751297, b: 0.24751297, a: 1}
-      data:
-        first:
-          name: _SpecularColor
-        second: {r: 1, g: 0, b: 0, a: 1}
