@@ -65,6 +65,8 @@ namespace VRStandardAssets.Examples
                 otherPeople[i].SetActive(false);
                 Renderer temp = otherButtons[i].GetComponent<Renderer>();
                 temp.material = m_NormalMaterial;
+                GetComponent<AudioSource>().Play();
+
             }
             Debug.Log("waypoint name is " + person);
             m_Renderer.material = m_OverMaterial;

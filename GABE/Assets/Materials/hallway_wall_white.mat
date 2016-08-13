@@ -94,14 +94,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ColorRamp
+          name: _SpecGlossMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _SpecGlossMap
+          name: _ColorRamp
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -179,22 +179,6 @@ Material:
         second: 0
       data:
         first:
-          name: _Refraction
-        second: 0.2
-      data:
-        first:
-          name: _Transparency
-        second: 1
-      data:
-        first:
-          name: _SpecularIntensity
-        second: 0.5
-      data:
-        first:
-          name: _NormalIntensity
-        second: 1
-      data:
-        first:
           name: _Stencil
         second: 0
       data:
@@ -217,6 +201,22 @@ Material:
         first:
           name: _ColorMask
         second: 15
+      data:
+        first:
+          name: _Refraction
+        second: 0.2
+      data:
+        first:
+          name: _Transparency
+        second: 1
+      data:
+        first:
+          name: _SpecularIntensity
+        second: 0.5
+      data:
+        first:
+          name: _NormalIntensity
+        second: 1
       data:
         first:
           name: _UseUIAlphaClip

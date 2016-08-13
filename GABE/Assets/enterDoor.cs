@@ -1,30 +1,51 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class enterDoor : MonoBehaviour {
 
     Animator anim;
-    public AudioClip sound;
+    public AudioClip openDoor;
+    public AudioClip closeDoor;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         anim = GetComponent<Animator>();
-
     }
 
     // Update is called once per frame
     void Update () {
-	
-	}
 
-    void OnTriggerEnter()
-    {
-        anim.SetTrigger("DoorOpen");
+
     }
 
-    void OnTriggerExit()
+    void OnTriggerEnter(Collider other)
     {
-        anim.SetTrigger("DoorClose");
+        
+
+        Debug.Log(other.tag);
+        if (other.tag == "Player") {
+            Debug.Log("not the door");
+            anim.SetTrigger("DoorOpen");
+            GetComponent<AudioSource>().PlayOneShot(openDoor);
+
+        }
+
     }
+
+    void OnTriggerExit(Collider other)
+    {
+
+
+        if (other.tag == "Player")
+        {
+            anim.SetTrigger("DoorClose");
+            GetComponent<AudioSource>().PlayOneShot(closeDoor);
+
+        }
+      }
+
+   
 }
 
