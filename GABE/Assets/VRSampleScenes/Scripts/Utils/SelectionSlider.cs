@@ -182,6 +182,9 @@ namespace VRStandardAssets.Utils
             // Play the clip appropriate for when the user starts looking at the bar.
             m_Audio.clip = m_OnOverClip;
             m_Audio.Play();
+
+            if (m_GazeOver)
+                m_FillBarRoutine = StartCoroutine(FillBar());
         }
 
 

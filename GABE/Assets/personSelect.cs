@@ -13,11 +13,10 @@ namespace VRStandardAssets.Examples
         float fadeTime = 1f;
         bool fadeIn = false;
         float volume;
-        public GameObject player;
         public GameObject person;
 
         public GameObject[] otherPeople;
-        public GameObject[] otherButtons;
+        //public GameObject[] otherButtons;
 
 
 
@@ -34,7 +33,7 @@ namespace VRStandardAssets.Examples
 
         private void Awake()
         {
-            m_Renderer.material = m_NormalMaterial;
+            //m_Renderer.material = m_NormalMaterial;
         }
 
         private void OnEnable()
@@ -63,13 +62,13 @@ namespace VRStandardAssets.Examples
             for (int i = 0; i < otherPeople.Length; i++)
             {
                 otherPeople[i].SetActive(false);
-                Renderer temp = otherButtons[i].GetComponent<Renderer>();
-                temp.material = m_NormalMaterial;
-                GetComponent<AudioSource>().Play();
+                //Renderer temp = otherButtons[i].GetComponent<Renderer>();
+                //temp.material = m_NormalMaterial;
+                //GetComponent<AudioSource>().Play();
 
             }
-            Debug.Log("waypoint name is " + person);
-            m_Renderer.material = m_OverMaterial;
+
+            //m_Renderer.material = m_OverMaterial;
             person.SetActive(true);
 
             
@@ -86,5 +85,7 @@ namespace VRStandardAssets.Examples
 
 
         }
+
+
     }
 }
