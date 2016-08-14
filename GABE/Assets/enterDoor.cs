@@ -27,6 +27,7 @@ namespace VRStandardAssets.Utils
             if (other.tag == "Player")
             {
                 anim.SetTrigger("DoorClose");
+                RenderSettings.ambientIntensity = 0.6f;
 
             }
         }

@@ -18,6 +18,11 @@ namespace VRStandardAssets.Utils
     {
         public event Action OnBarFilled;                                    // This event is triggered when the bar finishes filling.
 
+        float fadeDuration = 2;
+        float smoothness = 0.02f;
+        Color currentColor = Color.white;
+        float  currentIntensity; 
+
         public GameObject Plaques;
         public GameObject Person;
         public GameObject[] otherPeople;
@@ -64,9 +69,14 @@ namespace VRStandardAssets.Utils
         void Start()
         {
             door = GameObject.Find("elevator_door");
+            //StartCoroutine("LerpColor");
+
+
+
         }
         private void OnEnable()
         {
+
             m_VRInput.OnDown += HandleDown;
             m_VRInput.OnUp += HandleUp;
 
@@ -87,13 +97,37 @@ namespace VRStandardAssets.Utils
 
         private void Update()
         {
+ 
+            //RenderSettings.ambientIntensity = currentIntensity;
+            //RenderSettings.ambientSkyColor = currentColor;
+
             if (!m_UIFader)
                 return;
 
             // If this bar is using a UIFader turn off the collider when it's invisible.
             m_Collider.enabled = m_UIFader.Visible;
+
+          
+
         }
 
+        //IEnumerator LerpColor()
+        //{
+        //    float progress = 0; //This float will serve as the 3rd parameter of the lerp function.
+        //    float increment = smoothness / fadeDuration; //The amount of change to apply.
+        //    if (m_BarFilled) {
+        //    while (progress < 1)
+        //    {
+        //        currentIntensity = Mathf.Lerp(.6f, 0f, progress);
+        //        currentColor = Color.Lerp(Color.white, Color.black, progress);
+        //        progress += increment;
+        //        yield return new WaitForSeconds(smoothness);
+        //        Debug.Log("LERP THE DDUMB COLOR");
+        //    }
+        
+        //    return true;
+        //    }
+        //}
 
         public IEnumerator WaitForBarToFill()
         {
@@ -169,6 +203,11 @@ namespace VRStandardAssets.Utils
             Person.SetActive(true);
             //door.GetComponent<AudioSource>().Play();
             door.GetComponent<Animator>().SetTrigger("DoorOpen");
+
+            //RenderSettings.ambientIntensity = 0f;
+        
+
+
 
 
 

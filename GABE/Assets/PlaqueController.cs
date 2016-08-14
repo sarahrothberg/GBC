@@ -6,6 +6,7 @@ public class PlaqueController : MonoBehaviour {
     public AudioClip openDoor;
     public AudioClip closeDoor;
 
+
     void OnTriggerEnter(Collider other)
     {
         Plaques.SetActive(true);
